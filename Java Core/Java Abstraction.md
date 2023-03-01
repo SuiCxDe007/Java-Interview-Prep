@@ -66,3 +66,6 @@ class Taxi extends Accelerator {
 - No
 4) Why Abstract class has a constructor in it even-though we cannot create objects of a abstract class?
 - We **can** create objects from a subclass of an abstract class. The subclass constructor has a super keyword which will call the constructor of the abstract class. Hence, constructor of an abstract class is used by the constructor of a subclass. 
+5) Can abstract methods be private?
+- Abstract methods cannot be private as they are intended to be implemented by a subclass, therefore accessible by the subclass.
+- It's possible to have a private method inside an abstract class, but that cannot be defined abstract. 
