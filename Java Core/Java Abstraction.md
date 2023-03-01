@@ -53,19 +53,19 @@ class Taxi extends Accelerator {
 }
 
 ```
-
+---
 ###Q&A
 
-1) Can an abstract method declared as Static?
+1) **Can an abstract method declared as Static?**
 - No, static methods belong to a class while abstract methods belong to an instance of the class. An abstract method is intended to be overwritten by a subclass and it doesn't make sense to declare it as static since static methods are NOT overridden by any subclasses.
-- There can be static methods inside an abstract class, but they cannot be declared as abstraact.
-2) Is it possible to have an abstract method without any abstract methods?
+- There can be static methods inside an abstract class, but they cannot be declared as abstract.
+2) **Is it possible to have an abstract method without any abstract methods?**
 - Yes
 
-3) Is it possible to achieve multiple inheritance through abstract class.
+3) **Is it possible to achieve multiple inheritance through abstract class.**
 - No
-4) Why Abstract class has a constructor in it even-though we cannot create objects of a abstract class?
+4) **Why Abstract class has a constructor in it even-though we cannot create objects of a abstract class?**
 - We **can** create objects from a subclass of an abstract class. The subclass constructor has a super keyword which will call the constructor of the abstract class. Hence, constructor of an abstract class is used by the constructor of a subclass. 
-5) Can abstract methods be private?
+5) **Can abstract methods be private?**
 - Abstract methods cannot be private as they are intended to be implemented by a subclass, therefore accessible by the subclass.
 - It's possible to have a private method inside an abstract class, but that cannot be defined abstract. 
