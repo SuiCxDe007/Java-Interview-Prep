@@ -1,4 +1,4 @@
-##Java Abstraction
+## Java Abstraction
 
 `Abstraction` is the process of hiding implementation details and only showing functionality to user.
 - There are two ways to achieve abstraction in Java.
@@ -40,7 +40,7 @@ class RaceCar extends Accelerator {
 
     @Override
     void accelerate() {
-        System.out.println("RaceCar Accelerates 5ms-2");
+        System.out.println("RaceCar Accelerates 5ms^-2");
     }
 }
 
@@ -48,13 +48,13 @@ class Taxi extends Accelerator {
 
     @Override
     void accelerate() {
-        System.out.println("Taxi Accelerates 1ms-2");
+        System.out.println("Taxi Accelerates 1ms^-2");
     }
 }
 
 ```
 ---
-###Q&A
+### Q&A
 
 1) **Can an abstract method declared as Static?**
 - No, static methods belong to a class while abstract methods belong to an instance of the class. An abstract method is intended to be overwritten by a subclass and it doesn't make sense to declare it as static since static methods are NOT overridden by any subclasses.
