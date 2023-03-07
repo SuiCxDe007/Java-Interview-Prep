@@ -20,4 +20,7 @@ Collections API also provides features for searching, sorting, iterating, adding
 
 ### Collections Hierarchy in Java
 
+
 ![Hierarchy](https://static.javatpoint.com/images/java-collection-hierarchy.png "Via JavaPoint")
+
+- Collections Interface extends Iterable interface.
