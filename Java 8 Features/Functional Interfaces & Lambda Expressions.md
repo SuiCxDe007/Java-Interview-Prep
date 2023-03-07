@@ -43,6 +43,22 @@ interface MyInterface {
 }
 ```
 
+For functions with return types we can use the same, if it's a single line expression we can get rid of `return` keyword as well.
+
+```java 
+@FunctionalInterface
+interface Adder {
+    int add(int x, int y);
+}
+
+public class Mathematics {
+
+    public static void main(String[] args) {
+        Adder addition = (n1, n2) -> n1 + n2;
+        addition.add(2, 4);
+    }
+}
+```
 
 ### Q&A
 1) Can you add a `toString` method in a Functional Interface?
@@ -54,3 +70,6 @@ interface ExIntFace {
     String toString();
 }
 ```
+
+2. Why is there only a single method in Functional interfaces?
+- When we are using lambda functions, if there were multiple methods compiler will not know which method to call & will lead to a confusion. 
