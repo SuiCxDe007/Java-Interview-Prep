@@ -37,5 +37,9 @@ ArrayList<String> myList2 = new ArrayList<>(); // Generic arraylist (New)
 2) How can you remove duplicates from a ArrayList?
 - You can convert ArrayList into a `set`; if the order is required as well, you can convert to a `LinkedHashSet`
 3) Which is faster? `Array` or `ArrayList`?
-   - `Arrays` are faster because they are low-level data structions in java that can be accessed directly from memory. Since Arraylists are built on top of arrays it's required additional overhead to manage dynamic resizing of arrays.
+   - `Arrays` are faster because they are low-level data structures in java that can be accessed directly from memory. Since Arraylists are built on top of arrays it's required additional overhead to manage dynamic resizing of arrays.
    - When an Array is created block of memory is allocated to store the elements which makes the accessing of individual elements very fast. Direct access to memory is not possible with ArrayLists since they are implemented via a array.
+4) Difference between Array `length` vs ArrayList `size`?
+- length shows the number of elements that you can store in array & size shows current number of elements in the array.
+5) Difference between `Vector` and `ArrayList`?
+- Vector is `Synchornized` and ArrayList is not. Hence, `vector` is thread-safe and ArrayList is not.
